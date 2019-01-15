@@ -68,17 +68,16 @@ $(document).ready(function () {
         
         console.log("hola001");
         console.log(id);
-        
         $.get("module/project/controller/controller_pro.php?op=read_modal&modal=" + id, function (data, status) {
             var json = JSON.parse(data);
-            console.log(json);
+            //console.log(json);
             
             if(json === 'error') {
                 //console.log(json);
                 //pintar 503
                 window.location.href='index.php?page=503';
             }else{
-                console.log(json.idproject);
+                //console.log(json.idproject);
                 $("#idproject").html(json.idproject);
                 $("#ProName").html(json.ProName);
                 $("#ProType").html(json.ProType);

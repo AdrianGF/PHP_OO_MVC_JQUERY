@@ -1,5 +1,5 @@
 <?php
-    $path = $_SERVER['DOCUMENT_ROOT'] . '/framework/2k19/web2.0/';
+    $path = $_SERVER['DOCUMENT_ROOT'] . '/framework/FW_PHP_OO_MVC_JQUERY/web2.0/';
     include($path . "module/project/model/DAOProject.php");
 
     $error = array();

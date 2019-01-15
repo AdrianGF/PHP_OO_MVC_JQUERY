@@ -12,7 +12,7 @@
                     });
                 </script>
 
-            <p><a class="btn" href="index.php?page=controller_pro&op=create"><i class="fas fa-plus" style="color:#212529;"></i></a></p>
+            <p><a class="btn btn-primary-create" href="index.php?page=controller_pro&op=create"><i class="fas fa-plus" style="color:#212529;"></i></a></p>
     		<table id="list" class="table table-striped table-bordered" cellspacing="0" width="100%">
                 <thead>
                     <tr>
@@ -35,12 +35,12 @@
                                 echo '<td width=125>'. $row['ProName'] . '</td>';
                                 echo '<td width=125>'. $row['Mail'] . '</td>';
                                 echo '<td id="td_crud" width=350>';
-                                print ("<a class='Pro btn btn-primary' id='".$row['idproject']."'>Read</a>");
+                                print ("<a class='Pro btn btn-primary' id='".$row['idproject']."'><i class='fas fa-address-card'></i></a>");
                                 //echo '<a class="btn Pro" href="index.php?page=controller_pro&op=read&id='.$row['idproject'].'"><i class="fas fa-address-card"></i></a>';
                                 echo '&nbsp;';
-                                echo '<a class="btn" href="index.php?page=controller_pro&op=update&id='.$row['idproject'].'"><i class="fas fa-edit"></i></a>';
+                                echo '<a class="btn btn-primary-update" href="index.php?page=controller_pro&op=update&id='.$row['idproject'].'"><i class="fas fa-edit"></i></a>';
                                 echo '&nbsp;';
-                                echo '<a class="btn" href="index.php?page=controller_pro&op=delete&id='.$row['idproject'].'&ProName='.$row['ProName'].'"><i class="fas fa-trash"></i></a>';
+                                echo '<a class="btn btn-primary-delete" href="index.php?page=controller_pro&op=delete&id='.$row['idproject'].'&ProName='.$row['ProName'].'"><i class="fas fa-trash"></i></a>';
                                 echo '</td>';
                                 echo '</tr>';
                                 
@@ -57,7 +57,7 @@
 
 <!-- modal window -->
 <section id="project_modal">
-    <div id="details_project" hidden>
+    <div id="details_project" >
         <div id="details">
             <div id="container">
                 ID: <div id="idproject"></div></br>

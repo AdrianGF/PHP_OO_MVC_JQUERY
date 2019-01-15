@@ -4376,3 +4376,23 @@ input#ProPrice.ProPrice {
 #td_crud{
 	text-align: center;
 }
+
+.fa-address-card{
+	color: black;
+}
+
+.Pro.btn.btn-primary {
+	background-color: #00bcd4 !important;
+}
+
+.btn.btn-primary-update{
+	background-color: #1953a0 !important;
+}
+
+.btn.btn-primary-delete{
+	background-color: #a72435 !important;
+}
+
+.btn.btn-primary-create{
+	background-color:rgb(58, 200, 129) !important;
+}

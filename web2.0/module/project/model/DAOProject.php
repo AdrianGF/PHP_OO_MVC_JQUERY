@@ -1,5 +1,6 @@
 <?php
-    include ("model/connect.php");
+    $path = $_SERVER['DOCUMENT_ROOT'] . '/framework/FW_PHP_OO_MVC_JQUERY/web2.0/';
+    include($path . "model/connect.php");
 	class DAOProject{
 		function new_project($pro){
             print_r($pro);
