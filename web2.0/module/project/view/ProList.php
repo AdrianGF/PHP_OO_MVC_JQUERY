@@ -57,7 +57,7 @@
 
 <!-- modal window -->
 <section id="project_modal">
-    <div id="details_project" >
+    <div id="details_project" style="display: none;">
         <div id="details">
             <div id="container">
                 ID: <div id="idproject"></div></br>

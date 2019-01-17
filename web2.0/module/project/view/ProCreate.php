@@ -75,7 +75,11 @@
                             <option value="a">¥</option>
                         </select>
                         </td>
-                        <span id="e_ProPrice" class="styerror"></span>
+                        <span id="e_ProPrice" class="styerror">
+                        <?php
+                            print_r($error['ProPrice']);
+		                ?>
+                        </span>
                     </tr>
                     <tr>
                         <td class="req1"><label for="req">Requisitos:</label></td>

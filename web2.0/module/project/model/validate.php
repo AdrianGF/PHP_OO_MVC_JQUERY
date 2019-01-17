@@ -52,12 +52,12 @@ function validate_project() {
         }
 
         if (!$resultado['Mail']){
-            $error['Mail'] = "Tiene que ser un correo valido.";
+            $error['Mail'] = "El correo tiene que ser un correo valido.";
             $valido = false;
         }
 
         if (!$resultado['ProPrice']){
-            $error['ProPrice'] = "Solo puede contener números.";
+            $error['ProPrice'] = "El precio solo puede contener números.";
             $valido = false;
         }
 

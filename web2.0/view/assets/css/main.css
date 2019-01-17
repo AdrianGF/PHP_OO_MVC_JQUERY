@@ -4396,3 +4396,32 @@ input#ProPrice.ProPrice {
 .btn.btn-primary-create{
 	background-color:rgb(58, 200, 129) !important;
 }
+
+.progressPro {
+	text-align: left;
+}
+
+.progressPro h1 {
+	display: inline-block;
+	width: 20%;
+}
+
+.price-prog {
+	display: inline-block;
+	width: 80%;
+}
+
+.spain {
+		-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+		filter: grayscale(100%);
+}
+
+.spain {
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+}
+
+.spain:hover {
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(0%);
+}

@@ -4,9 +4,6 @@
             <tr>
 
                 <td align="center"  colspan="2"><h3>¿Desea seguro borrar todos los proyectos?</h3></td>
-                <?php
-                    var_dump($_GET);
-                ?>
                 
             </tr>
             <tr>

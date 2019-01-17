@@ -8,7 +8,7 @@ function validate_project(redirect) {
     document.getElementById('e_ProName').innerHTML = "";
 
     
-/*   if (document.ProForm.ProType == '?'){
+/*   if (document.ProForm.ProType == ""){
         document.getElementById('e_ProType').innerHTML = "Campo requerido.";
         return 0;
     }
@@ -65,9 +65,7 @@ document.ProForm.action="index.php?page=controller_pro";
 $(document).ready(function () {
     $('.Pro').click(function () {
         var id = this.getAttribute('id');
-        
-        console.log("hola001");
-        console.log(id);
+
         $.get("module/project/controller/controller_pro.php?op=read_modal&modal=" + id, function (data, status) {
             var json = JSON.parse(data);
             //console.log(json);
@@ -93,8 +91,8 @@ $(document).ready(function () {
                 $("#project_modal").dialog({
                     width: 850, //<!-- ------------- ancho de la ventana -->
                     height: 500, //<!--  ------------- altura de la ventana -->
-                    //show: "scale", <!-- ----------- animación de la ventana al aparecer -->
-                    //hide: "scale", <!-- ----------- animación al cerrar la ventana -->
+                    //show: "scale",// <!-- ----------- animación de la ventana al aparecer -->
+                    //hide: "scale", //<!-- ----------- animación al cerrar la ventana -->
                     resizable: "false", //<!-- ------ fija o redimensionable si ponemos este valor a "true" -->
                     //position: "down",<!--  ------ posicion de la ventana en la pantalla (left, top, right...) -->
                     modal: "true", //<!-- ------------ si esta en true bloquea el contenido de la web mientras la ventana esta activa (muy elegante) -->

@@ -3,7 +3,7 @@
     include($path . "model/connect.php");
 	class DAOProject{
 		function new_project($pro){
-            print_r($pro);
+            //print_r($pro);
             $url='/view/img/';
 
             foreach ($pro[req] as $requirements) {
@@ -15,7 +15,7 @@
             $conexion = connect::con();
             $res = mysqli_query($conexion, $sql);
             connect::close($conexion);
-            die;
+            //die;
 			return $res;
         }
 

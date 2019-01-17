@@ -135,7 +135,7 @@
                     }
                     
                     if($rdo){
-                        echo '<script language="javascript">alert("Registrado en la base de datos correctamente")</script>';
+                        //echo '<script language="javascript">alert("Registrado en la base de datos correctamente")</script>';
                         $callback = 'index.php?page=controller_pro&op=list';
                         die('<script>window.location.href="'.$callback .'";</script>');
                     }else{

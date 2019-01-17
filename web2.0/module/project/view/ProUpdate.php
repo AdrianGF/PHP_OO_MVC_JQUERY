@@ -6,7 +6,11 @@
                     <tr>
                         <td><label for="ProName">Nombre del proyecto:</label></td>
                         <td><input name="ProName" id="ProName" type="text" placeholder="El nombre de tu nuevo proyecto." value="<?php echo $project['ProName'];?>"/></td>
-                        <span id="e_ProName" class="styerror"></span>
+                        <span id="e_ProName" class="styerror">
+                            <?php
+                                print_r($error['ProName']);
+                            ?>
+                        </span>
                     </tr>
                     <tr>
                         <td><label for="ProType">Orientación del proyecto:</label></td>
@@ -57,18 +61,31 @@
                     <tr>
                         <td><label for="ProDesc">Descripción del proyecto:</label></td>
                         <td><textarea name="ProDesc" rows="5" cols="25" id="ProDesc"> <?php echo $project['ProDesc'];?> </textarea></td>
-                        <span id="e_ProDesc" class="styerror"></span>
+                        <span id="e_ProDesc" class="styerror">
+                            <?php
+                                print_r($error['ProDesc']);
+                            ?>
+                        </span>
                     </tr>
 
                     <tr>
                         <td><label for="Ubica">Ubicación:</label></td>
                         <td><input name="Ubica" id="Ubica" type="text" placeholder="Ubicación" value="<?php echo $project['Ubica'];?>" /></td>
+                        <span id="e_Ubica" class="styerror">
+                            <?php
+                                print_r($error['Ubica']);
+                            ?>
+                        </span>
                     </tr>
 
                     <tr>
                         <td><label for="Mail">Correo electronico:</label></td>
                         <td><input name="Mail" id="Mail" type="text" placeholder="Correo" value="<?php echo $project['Mail'];?>" /></td>
-                        <span id="e_Mail" class="styerror"></span>
+                        <span id="e_Mail" class="styerror">
+                            <?php
+                                print_r($error['Mail']);
+                            ?>
+                        </span>
                     </tr>
 
                     <tr>
@@ -86,6 +103,11 @@
                             <option value="a">¥</option>
                         </select>
                         </td>
+                        <span id="e_ProPrice" class="styerror">
+                        <?php
+                            print_r($error['ProPrice']);
+		                ?>
+                        </span>
                     </tr>
                     
                     <tr>
