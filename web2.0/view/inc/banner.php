@@ -1,53 +1,44 @@
 <!-- Banner -->
 	<head>
-		<title>Hielo by TEMPLATED</title>
+		<title>Unlimty Projects</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="view/assets/css/main.css" />
 	</head>
 	<section class="banner full">
 				<article>
-					<img src="view/images/slide01.jpg" alt="" />
+					<img src="view/images/banner01.jpg" alt="" />
 					<div class="inner">
 						<header>
-							<p>A free responsive web site template by <a href="https://templated.co">TEMPLATED</a></p>
-							<h2>Hielo</h2>
+							<p data-tr="ROMPE LOS LÍMITES DE TUS SUEÑOS, Y CREA"></p>
+							<h2><span class="text_logo">U</span>nlimty</h2>
 						</header>
 					</div>
 				</article>
 				<article>
-					<img src="view/images/slide02.jpg" alt="" />
+					<img src="view/images/banner02.jpg" alt="" />
 					<div class="inner">
 						<header>
-							<p>Lorem ipsum dolor sit amet nullam feugiat</p>
-							<h2>Magna etiam</h2>
+						<p data-tr="ESCOGE EL NOMBRE A TU NUEVA CREACIÓN"></p>
+							<h2><span class="text_logo">U</span>nlimty</h2>
 						</header>
 					</div>
 				</article>
 				<article>
-					<img src="view/images/slide03.jpg"  alt="" />
+					<img src="view/images/banner03.jpg"  alt="" />
 					<div class="inner">
 						<header>
-							<p>Sed cursus aliuam veroeros lorem ipsum nullam</p>
-							<h2>Tempus dolor</h2>
+							<p data-tr="PON TEXTURAS A TUS SUEÑOS"></p>
+							<h2><span class="text_logo">U</span>nlimty</h2>
 						</header>
 					</div>
 				</article>
 				<article>
-					<img src="view/images/slide04.jpg"  alt="" />
+					<img src="view/images/banner04.jpg"  alt="" />
 					<div class="inner">
 						<header>
-							<p>Adipiscing lorem ipsum feugiat sed phasellus consequat</p>
-							<h2>Etiam feugiat</h2>
-						</header>
-					</div>
-				</article>
-				<article>
-					<img src="view/images/slide05.jpg"  alt="" />
-					<div class="inner">
-						<header>
-							<p>Ipsum dolor sed magna veroeros lorem ipsum</p>
-							<h2>Lorem adipiscing</h2>
+							<p data-tr="NO LO DEJES COMO UN SIMPLE SUEÑO" ></p>
+							<h2><span class="text_logo">U</span>nlimty</h2>
 						</header>
 					</div>
 				</article>

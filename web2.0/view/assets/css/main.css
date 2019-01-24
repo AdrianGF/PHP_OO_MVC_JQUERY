@@ -2893,8 +2893,9 @@
 			}
 
 		.wrapper.style2 {
-			background-color: #f2f2f2;
+			background-color: #adadad;
 			color: #a6a6a6;
+			padding-top: 30px;
 		}
 
 			.wrapper.style2 input, .wrapper.style2 select, .wrapper.style2 textarea {
@@ -4411,17 +4412,113 @@ input#ProPrice.ProPrice {
 	width: 80%;
 }
 
-.spain {
-		-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-		filter: grayscale(100%);
-}
 
-.spain {
-	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-	filter: grayscale(100%);
-}
 
 .spain:hover {
 	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
 	filter: grayscale(0%);
+}
+#idioma {
+	display: inline-block;
+    height: inherit;
+    left: 1.25em;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    position: initial;
+    top: 0;
+}
+#btn-es,
+#btn-en,
+#btn-va {
+	height: 15px;
+	width: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-color: transparent;
+}
+
+#btn-es {
+	background-image: url(../../images/spain.png);
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+}
+
+#btn-es:hover {
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(0%);
+	background-image: url(../../images/spain.png);
+}
+
+#btn-es:focus {
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(0%);
+	background-image: url(../../images/spain.png);
+}
+
+#btn-en {
+	background-image: url(../../images/flag-en.png);
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+}
+
+#btn-en:hover {
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(0%);
+	background-image: url(../../images/flag-en.png);
+}
+
+#btn-en:focus {
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(0%);
+	background-image: url(../../images/flag-en.png);
+}
+
+#btn-va {
+	background-image: url(../../images/val.png);
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+
+}
+
+#btn-va:hover {
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(0%);
+	background-image: url(../../images/val.png);
+}
+
+#btn-va:focus {
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(0%);
+	background-image: url(../../images/val.png);
+}
+
+.htitle {
+	font-size: 2rem;
+	color: white !important;
+	background-color: rgba(0, 0, 0, 0.95);
+	font-weight: 300;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.content {
+	background-color: white;
+}
+
+.likepage_dt{
+	text-align: center;
+	margin-top: 30px;
+}
+
+#dataTable{
+	display: inline-block;
+}
+
+.text_logo {
+	color: #FFF;
 }

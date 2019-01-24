@@ -1,2 +1,2 @@
-<img src="view/img/404.jpg">
+<img src="view/images/404.png">
 <a href="index.php">Volver</a>

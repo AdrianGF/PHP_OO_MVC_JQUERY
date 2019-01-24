@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>Form</title>
+  <title>Unlimty Projects</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="view/assets/css/main.css" rel="stylesheet" type="text/css" />
@@ -49,11 +49,14 @@
   </head>
 <body>
       <!-- Scripts -->
-      <script src="view/assets/js/jquery.min.js"></script>
+    <script src="view/assets/js/jquery.min.js"></script>
 		<script src="view/assets/js/jquery.scrollex.min.js"></script>
 		<script src="view/assets/js/skel.min.js"></script>
 		<script src="view/assets/js/util.js"></script>
     <script src="view/assets/js/main.js"></script>
+
+    <script src="https://jqwidgets.com/public/jqwidgets/jqx-all.js"></script>
+   	<link rel="stylesheet" href="https://jqwidgets.com/public/jqwidgets/styles/jqx.base.css"/>
     
     <!-- MDBootstrap Datatables  -->
     <script type="text/javascript" src="view/assets/js/datatables.min.js"></script>

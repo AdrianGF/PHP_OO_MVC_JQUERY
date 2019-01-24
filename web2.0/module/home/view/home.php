@@ -2,18 +2,18 @@
 			<section id="one" class="wrapper style2">
 				<div class="inner">
 					<div class="grid-style">
-
+						
 					<?php
                         if ($rdo->num_rows === 0){
                             echo '<tr>';
-                            echo '<td align="center"  colspan="3">NO HAY NINGUN USUARIO</td>';
+                            echo '<td align="center"  colspan="3">EMPTY</td>';
                             echo '</tr>';
                         }else{
                             foreach ($rdo as $row) {
 								echo '<div>';
 									echo '<div class="box">';
 										echo '<div class="image fit">';
-											echo '<img src="view/images/pic02.jpg" alt="" />';
+											echo '<img src="view/images/bg.jpg" alt="" />';
 										echo '</div>';
 										echo '<div class="content">';
 											echo '<header class="algin-center">';
@@ -47,36 +47,12 @@
 					</div>
 				</div>
 			</section>
-<!-- 
-
-<div class="progress">
-  <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-</div>
-
-						<div>
-							<div class="box">
-								<div class="image fit">
-									<img src="view/images/pic03.jpg" alt="" />
-								</div>
-								<div class="content">
-									<header class="align-center">
-										<p>mattis elementum sapien pretium tellus</p>
-										<h2>Vestibulum sit amet</h2>
-									</header>
-									<p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada.</p>
-									<footer class="align-center">
-										<a href="#" class="button alt">Learn More</a>
-									</footer>
-								</div>
-							</div>
-						</div> -->
 
 		<!-- Two -->
 			<section id="two" class="wrapper style3">
 				<div class="inner">
 					<header class="align-center">
-						<p>Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna</p>
-						<h2>Morbi maximus justo</h2>
+						<h2 data-tr="Algunos de los proyectos:"></h2>
 					</header>
 				</div>
 			</section>
@@ -84,10 +60,6 @@
 		<!-- Three -->
 			<section id="three" class="wrapper style2">
 				<div class="inner">
-					<header class="align-center">
-						<p class="special">Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna</p>
-						<h2>Morbi maximus justo</h2>
-					</header>
 					<div class="gallery">
 						<div>
 							<div class="image fit">

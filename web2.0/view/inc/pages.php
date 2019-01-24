@@ -3,9 +3,12 @@
     if ((isset($_GET['page']))){
 		
 		switch($_GET['page']){
+			
+			case "controller_like";
+				include("module/like/controller/".$_GET['page'].".php");
+				break;
 			case "controller_home";
 				include("module/home/controller/".$_GET['page'].".php");
-				print_r($_GET['op']);
 				break;
 			case "controller_pro";
 				include("module/project/controller/".$_GET['page'].".php");

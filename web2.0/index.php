@@ -1,11 +1,11 @@
 <?php
-    if ((isset($_GET['page'])) && ($_GET['page']==="controller_pro") ){
+    if ((isset($_GET['page'])) && ($_GET['page']==="controller_pro")){
 		include("view/inc/top_page_pro.php");
 	}else{
 		include("view/inc/top_page.php");
     }
     
-    if ((isset($_GET['page'])) && ($_GET['page']==="controller_pro") ){
+    if ((isset($_GET['page'])) && ($_GET['page']==="controller_pro") || ($_GET['page']==="controller_like")){
 		include("view/inc/banner2.php");
 	}else{
 		include("view/inc/banner.php");
