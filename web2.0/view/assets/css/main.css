@@ -2893,7 +2893,7 @@
 			}
 
 		.wrapper.style2 {
-			background-color: #adadad;
+			background-color: #eae9e9;
 			color: #a6a6a6;
 			padding-top: 30px;
 		}
@@ -4522,3 +4522,49 @@ input#ProPrice.ProPrice {
 .text_logo {
 	color: #FFF;
 }
+
+/*map*/
+#map {
+	height: 700px;
+    width: 100%;
+	margin: 0 auto;
+	margin-bottom: -25px;
+}
+
+
+.like_bttn {
+	position: relative;
+    top: -40px;
+	text-align: right;
+	background-color: #0000008c;
+	height: 40px;
+	width: 100%;
+
+}
+.like_bttn button {
+	height: 40px;
+	width: 30px;
+	background-color: transparent !important;
+	text-align: center;
+	display: block;
+	margin-left: 93%;
+	padding: 0px;
+	margin-right: 10px;
+	border-radius: 0px;
+}
+
+.like_bttn button .img_like{
+	width: 30px !important;
+	height: 30px;
+	background:url(view/images/like02.svg) no-repeat;
+	filter: grayscale(100%);
+	text-decoration: none;
+	
+}
+
+.like_bttn button:focus > .img_like {
+	background:url(view/images/like02.svg) no-repeat !important;
+	filter: grayscale(0%);
+}
+
+

@@ -13,6 +13,9 @@
 			case "controller_pro";
 				include("module/project/controller/".$_GET['page'].".php");
 				break;
+			case "controller_contact";
+				include("module/contact/controller/".$_GET['page'].".php");
+				break;
 			case "elements";
 				include($_GET['page'].".html");
 				break;

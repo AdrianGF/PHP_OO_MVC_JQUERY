@@ -14,6 +14,9 @@
 									echo '<div class="box">';
 										echo '<div class="image fit">';
 											echo '<img src="view/images/bg.jpg" alt="" />';
+											echo '<div class="like_bttn">';
+												echo '<button type="button"><img class="img_like" src="view/images/like02.svg" alt=""/></button>';
+											echo '</div>';
 										echo '</div>';
 										echo '<div class="content">';
 											echo '<header class="algin-center">';

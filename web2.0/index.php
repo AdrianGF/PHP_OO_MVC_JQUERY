@@ -2,10 +2,15 @@
     if ((isset($_GET['page'])) && ($_GET['page']==="controller_pro")){
 		include("view/inc/top_page_pro.php");
 	}else{
-		include("view/inc/top_page.php");
+        if ((isset($_GET['page'])) && ($_GET['page']==="controller_contact")){
+            include("view/inc/top_page_contact.php");
+        }else{
+            include("view/inc/top_page.php");
+        }
     }
+
     
-    if ((isset($_GET['page'])) && ($_GET['page']==="controller_pro") || ($_GET['page']==="controller_like")){
+    if ((isset($_GET['page'])) && ($_GET['page']==="controller_pro") || ($_GET['page']==="controller_like") || ($_GET['page']==="controller_contact")){
 		include("view/inc/banner2.php");
 	}else{
 		include("view/inc/banner.php");

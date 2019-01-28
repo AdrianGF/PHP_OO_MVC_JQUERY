@@ -15,8 +15,7 @@
 		<!-- Material Design Bootstrap -->
 		<link href="view/assets/css/mdb.min.css" rel="stylesheet">
 
-		<!-- -->
-
+		
 		   
 		<!-- Scripts -->
 		<script src="view/assets/js/jquery.min.js"></script>
