@@ -17,7 +17,7 @@
                 <thead>
                     <tr>
                         <td width=125><b>ID</b>
-                        <td width=125><b>Project Name</b>
+                        <td width=125><b data-tr="Nombre Proyecto"></b>
                         <td width=125><b>Address</b>
                         <th width=350><b>Operations</b>
                     </tr>

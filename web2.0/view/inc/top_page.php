@@ -26,8 +26,12 @@
 
 
 		<script type="text/javascript" src="view/assets/js/translate.js"></script>
+		<script type="text/javascript" src="module/shop/model/project_shop.js"></script>
+		<script type="text/javascript" src="module/shop/model/dropdown.js"></script>
+		<script type="text/javascript" src="module/api/model/api.js"></script>
 		<!-- MDBootstrap Datatables  -->
 		<script type="text/javascript" src="view/assets/js/datatables.min.js"></script>
+		
 	</head>
 
 	<body>

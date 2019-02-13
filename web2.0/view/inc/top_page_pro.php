@@ -44,10 +44,11 @@
             });
             } );
             </script>
+
     <script type="text/javascript" src="module/project/model/validate_pro.js" ></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  </head>
-<body>
+    <script type="text/javascript" src="view/assets/js/translate.js"></script>
+    
       <!-- Scripts -->
     <script src="view/assets/js/jquery.min.js"></script>
 		<script src="view/assets/js/jquery.scrollex.min.js"></script>
@@ -60,3 +61,5 @@
     
     <!-- MDBootstrap Datatables  -->
     <script type="text/javascript" src="view/assets/js/datatables.min.js"></script>
+  </head>
+<body>

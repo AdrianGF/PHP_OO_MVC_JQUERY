@@ -1,8 +1,38 @@
+			<section id="one_dd" class="wrapper style2">
+				<div class="inner">
+					<div class="grid-style">
+
+						<div id="containerDDAA">
+							<div class="bar">
+								<div class="drop1">
+									<select id="dd_type">
+										<option value="0">Type</option>
+									</select>
+								</div>
+								<div class="drop2">
+									<select id="dd_city">
+										<option value="0">City</option>
+									</select>
+								</div>
+								<div class="auto">
+									<input  type="text" size="50" id="aa_name" name="aa_name" />
+									<div id="suggestions"></div>
+								</div>
+								<div class="button_dd">
+										<button class="btn_dd" type="button">Busca</button>
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		
+
 		<!-- One -->
 			<section id="one" class="wrapper style2">
 				<div class="inner">
 					<div class="grid-style">
-						
+
 					<?php
                         if ($rdo->num_rows === 0){
                             echo '<tr>';
@@ -15,7 +45,7 @@
 										echo '<div class="image fit">';
 											echo '<img src="view/images/bg.jpg" alt="" />';
 											echo '<div class="like_bttn">';
-												echo '<button type="button"><img class="img_like" src="view/images/like02.svg" alt=""/></button>';
+												echo '<button class="Like" type="button"><img class="img_like" src="view/images/like02.svg" alt=""/></button>';
 											echo '</div>';
 										echo '</div>';
 										echo '<div class="content">';
@@ -55,55 +85,47 @@
 			<section id="two" class="wrapper style3">
 				<div class="inner">
 					<header class="align-center">
-						<h2 data-tr="Algunos de los proyectos:"></h2>
+						<h2 data-tr="API - PROJECTS"></h2>
 					</header>
 				</div>
+
 			</section>
+
 
 		<!-- Three -->
 			<section id="three" class="wrapper style2">
 				<div class="inner">
+					<div class="container_api">
+						<div class="api_home_menu">
+							<input id="api1" name="Open ended" type="button" value="Open ended" class="api_test" />
+							<input id="api2" name="Take what you raise" type="button" value="Take what you raise" class="api_test" />
+							<input id="api3" name="All or nothing" type="button" value="All or nothing" class="api_test" />	
+						</div>
+						<div id="test"></div>
+					</div>
 					<div class="gallery">
-						<div>
-							<div class="image fit">
-								<a href="#"><img src="view/images/pic01.jpg" alt="" /></a>
+							<div>
+								<div class="image fit">
+									<a href="#"><img src="view/images/bg.jpg" alt="" /></a>
+								</div>
 							</div>
-						</div>
-						<div>
-							<div class="image fit">
-								<a href="#"><img src="view/images/pic02.jpg" alt="" /></a>
+							<div>
+								<div class="image fit">
+									<a href="#"><img src="view/images/bg.jpg" alt="" /></a>
+								</div>
 							</div>
-						</div>
-						<div>
-							<div class="image fit">
-								<a href="#"><img src="view/images/pic03.jpg" alt="" /></a>
+							<div>
+								<div class="image fit">
+									<a href="#"><img src="view/images/bg.jpg" alt="" /></a>
+								</div>
 							</div>
-						</div>
-						<div>
-							<div class="image fit">
-								<a href="#"><img src="view/images/pic04.jpg" alt="" /></a>
-							</div>
-						</div>
-						<div>
-							<div class="image fit">
-								<a href="#"><img src="view/images/pic01.jpg" alt="" /></a>
-							</div>
-						</div>
-						<div>
-							<div class="image fit">
-								<a href="#"><img src="view/images/pic01.jpg" alt="" /></a>
-							</div>
-						</div>
-						<div>
-							<div class="image fit">
-								<a href="#"><img src="view/images/pic01.jpg" alt="" /></a>
-							</div>
-						</div>
-						<div>
-							<div class="image fit">
-								<a href="#"><img src="view/images/pic01.jpg" alt="" /></a>
+							<div>
+								<div class="image fit">
+									<a href="#"><img src="view/images/bg.jpg" alt="" /></a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+
 			</section>

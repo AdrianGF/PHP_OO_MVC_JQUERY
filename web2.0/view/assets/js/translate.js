@@ -7,8 +7,11 @@ frases = {
         "INICIO": "HOME",
         "PROYECTOS":"PROJECTS",
         "LIKEPAGE": "LIKEPAGE",
+        "SHOP":"SHOP",
         "CONTACTO":"CONTACT",
-        "ELEMENTOS":"ELEMENTS"
+        "ELEMENTOS":"ELEMENTS",
+        "Nombre Proyecto":"Name Project"
+        
     },
     "va": {
         "ROMPE LOS LÍMITES DE TUS SUEÑOS, Y CREA": "TRENCA ELS LÍMITS DELS TEUS SOMNIS, I CREA",
@@ -18,8 +21,10 @@ frases = {
         "INICIO": "INICI",
         "PROYECTOS":"PROJECTES",
         "LIKEPAGE": "LIKEPAGE",
+        "SHOP":"SHOP",
         "CONTACTO":"CONTACTE",
-        "ELEMENTOS":"ELEMENTS"
+        "ELEMENTOS":"ELEMENTS",
+        "Nombre Proyecto":"Nom Projecte"
     }
   };
   

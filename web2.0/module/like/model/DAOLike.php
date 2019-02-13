@@ -10,6 +10,14 @@
             connect::close($conexion);
             return $res;
         }
+
+        function add_like($idproject, $likes){
+			$sql = "INSERT INTO likes VALUE ( $idproject , $likes )";
+			$conexion = connect::con();
+            $res = mysqli_query($conexion, $sql);
+            connect::close($conexion);
+            return $res;
+        }
     
 		
 	}

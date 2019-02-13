@@ -62,7 +62,7 @@
 
                     <tr>
                         <td><label for="ProDateIni">Día de inicio del proyecto:</label></td>
-                        <td><input name="ProDateIni" id="date2" type="ProDateIni" placeholder="Fecha de inicio." readonly value="<?php echo $_POST?$_POST['ProDateIni']:""; ?>" /></td>
+                        <td><input name="ProDateIni" id="date2" type="ProDateIni" placeholder="Fecha de inicio." value="<?php echo $_POST?$_POST['ProDateIni']:""; ?>" /></td>
                         <span id="e_ProDateIni" class="styerror"></span>
                     </tr>
                     <tr>

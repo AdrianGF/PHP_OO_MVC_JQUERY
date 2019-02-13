@@ -1,4 +1,4 @@
-$(document).ready(function () {
+/*$(document).ready(function () {
     
     var source =
     {
@@ -35,3 +35,17 @@ $(document).ready(function () {
       ]
     });  
 });
+
+
+
+$(document).ready(function () {
+    $('.Like').click(function () {
+        var id = this.getAttribute('id');
+
+        $.get("module/like/controller/controller_like.php?op=like&id=" + id, function (data, status) {
+            var json = JSON.parse(data);
+            //console.log(json);
+            
+        });
+    });
+});*/

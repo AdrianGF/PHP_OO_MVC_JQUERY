@@ -28,6 +28,26 @@
            echo json_encode($rdolike);
        }
        break;
+
+        case 'like':
+        try{
+            $daolike = new DAOLike();
+            $rdo = $daolike->add_like($_GET['id'], $_GET['like']);
+        } catch(Exception $e){
+            echo json_encode("error");
+        }
+
+        if(!$rdo){
+            echo json_encode("error");
+        }
+        else{
+            $rdolike = array();
+            foreach ($rdo as $row) {
+                array_push($rdolike, $row);
+            }
+            echo json_encode($rdolike);
+        }
+        break;
        
    default:
        include("view/inc/error404.php");
