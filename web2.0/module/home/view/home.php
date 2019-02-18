@@ -20,7 +20,7 @@
 								</div>
 								<div class="button_dd">
 										<button class="btn_dd" type="button">Busca</button>
-									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -97,35 +97,27 @@
 				<div class="inner">
 					<div class="container_api">
 						<div class="api_home_menu">
-							<input id="api1" name="Open ended" type="button" value="Open ended" class="api_test" />
+								<div class="api_class">
+									<div class="image fit">
+										<a id="api1" name="Open ended" value="Open ended" class="api_test"><img src="view/images/api05.png" alt="" /></a>
+									</div>
+								</div>
+								<div class="api_class">
+									<div class="image fit">
+										<a id="api2" name="Take what you raise" value="Take what you raise" class="api_test"><img src="view/images/api04.png" alt="" /></a>
+									</div>
+								</div>
+								<div class="api_class">
+									<div class="image fit">
+										<a id="api3" name="All or nothing" value="All or nothing" class="api_test"><img src="view/images/api06.png" alt="" /></a>
+									</div>
+								</div>
+							<!--<input id="api1" name="Open ended" type="button" value="Open ended" class="api_test" />
 							<input id="api2" name="Take what you raise" type="button" value="Take what you raise" class="api_test" />
-							<input id="api3" name="All or nothing" type="button" value="All or nothing" class="api_test" />	
-						</div>
-						<div id="test"></div>
-					</div>
-					<div class="gallery">
-							<div>
-								<div class="image fit">
-									<a href="#"><img src="view/images/bg.jpg" alt="" /></a>
-								</div>
-							</div>
-							<div>
-								<div class="image fit">
-									<a href="#"><img src="view/images/bg.jpg" alt="" /></a>
-								</div>
-							</div>
-							<div>
-								<div class="image fit">
-									<a href="#"><img src="view/images/bg.jpg" alt="" /></a>
-								</div>
-							</div>
-							<div>
-								<div class="image fit">
-									<a href="#"><img src="view/images/bg.jpg" alt="" /></a>
-								</div>
-							</div>
+							<input id="api3" name="All or nothing" type="button" value="All or nothing" class="api_test" />	-->
 						</div>
 					</div>
 				</div>
+			</div>
 
 			</section>

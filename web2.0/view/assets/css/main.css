@@ -4667,10 +4667,16 @@ img.shop_img {
 
 .api_home_menu{
     background-color: transparent;
-    padding: 5px;
+	padding: 5px;
+	height: 181px;
 }
 
-#api1{
-	
+.api_class{
+	width: 33%;
+	height: 100%;
+	display: inline-block;
 }
 
+.api_img{
+	width: 33%;
+}

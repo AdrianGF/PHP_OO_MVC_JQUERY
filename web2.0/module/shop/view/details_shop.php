@@ -3,3 +3,4 @@
         <div id="details_prod"></div>
     </div>
 </div>
+<div id="details_prod_api"></div>

@@ -1,4 +1,4 @@
-/*$(document).ready(function () {
+$(document).ready(function () {
     
     var source =
     {
@@ -48,4 +48,4 @@ $(document).ready(function () {
             
         });
     });
-});*/
+});
