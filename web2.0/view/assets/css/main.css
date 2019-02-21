@@ -4680,3 +4680,9 @@ img.shop_img {
 .api_img{
 	width: 33%;
 }
+
+#error_register{
+	background-color: #ff000096;
+	border-radius: 6px;
+	color: black;
+}

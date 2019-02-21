@@ -34,7 +34,7 @@ $(document).ready(function(){
 
                 if((stored[1] == "Open ended" ) && (data.funding_type == "Open ended")){
                     //localStorage.clear();
-                    console.log(data)
+                    //console.log(data)
                     $( "#list_api" ).append( "<img class='api_img' src='view/images/api05.png' /> </br><a class='shop_proname_class' id="+ 'n' + data.nid +">" + data.title + "<a/></br>" );   
                     
                 }
