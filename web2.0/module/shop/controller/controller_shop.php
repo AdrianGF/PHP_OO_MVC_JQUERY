@@ -1,6 +1,9 @@
 <?php
     $path = $_SERVER['DOCUMENT_ROOT'] . '/framework/FW_PHP_OO_MVC_JQUERY/web2.0/';
     include($path . "module/shop/model/DAOShop.php");
+    if (isset($_SESSION["tiempo"])) {  
+	    $_SESSION["tiempo"] = time(); //Devuelve la fecha actual
+	}
 
     $error = array();
     switch($_GET['op']){

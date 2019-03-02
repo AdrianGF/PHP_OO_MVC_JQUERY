@@ -14,12 +14,12 @@ function validate_register() {
     if (($resultado != null) && ($resultado)) {
         if ($resultado['user']) {
             $daologin = new DAOLogin();
-            $rdo = $daologin->UQ_user($resultado);
-
+            $rdo = $daologin->UQ_user($resultado, $_POST['email']);
+    
             if ($rdo->num_rows === 0) {
                 $error['user'] = '';
             }else {
-                $error['user'] = 'El usuario ya existe.';
+                $error['user'] = 'El usuario o el correo ya existe.';
                 $valido = false;
             }
         }

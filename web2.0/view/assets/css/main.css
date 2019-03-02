@@ -4419,6 +4419,7 @@ input#ProPrice.ProPrice {
 	filter: grayscale(0%);
 }
 #idioma {
+	width: 30%;
 	display: inline-block;
     height: inherit;
     left: 1.25em;
@@ -4686,3 +4687,134 @@ img.shop_img {
 	border-radius: 6px;
 	color: black;
 }
+
+#error_login{
+	background-color: #ff000096;
+	border-radius: 6px;
+	color: black;
+}
+
+#login_header {
+	display: inline-block;
+    height: inherit;
+    left: 1.25em;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    position: initial;
+    top: 0;
+}
+
+#login {
+	background-color: transparent;
+	height: 25px;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 1);
+}
+
+
+#login .fa-sign-in {
+	color: rgba(255, 255, 255, 1);
+}
+
+#login .fa-sign-out {
+	color: rgba(255, 255, 255, 1);
+}
+
+.top_menu_stuff{
+	height: 56px;
+	width: 100%;
+}
+
+.bottom_menu_stuff{
+	width: 100%;
+}
+
+.bottom_menu_stuff #login_header{
+	text-align: right;
+	vertical-align: super;
+	height: auto;
+}
+
+.bottom_menu_stuff #login_header a{
+	text-decoration: none;
+	font-size: 13px;
+	color: rgba(255, 255, 255, 1);
+}
+
+#profile {
+	display: inline-block;
+	width: 100%;
+	height: auto;
+}
+#notprofile {
+	display: inline-block;
+	width: 35%;
+	height: auto;
+}
+
+.profile_img {
+	height: 56px;
+	width: 25%;
+    border: solid 1px white;
+}
+
+#profile_info {
+	height: 56px;
+}
+
+.profile_lab_user {
+	color: white;
+	font-size: 11px;
+	display: inline-block;
+	margin: 0px;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
+.profile_lab_email {
+	color: black;
+	font-size: 11px;
+	display: inline-block;
+	margin: 0px;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
+.profile_top {
+	display: inline-block;
+	height: 50%;
+	width: 100%;
+	max-width: 100%;
+	border-top: solid 1px white;
+	border-right: solid 1px white;
+	background-color: gray;
+}
+
+.profile_bottom {
+	display: inline-block;
+	height: 50%;
+	width: 100%;
+	max-width: 100%;
+	border-bottom: solid 1px white;
+	border-right: solid 1px white;
+	background-color: lightgray;
+}
+
+.profile_top_bottom {
+	display: inline-block;
+    width: 75%;
+    vertical-align: top;
+    height: 56px;
+}
+
+#not_profile {
+	width: 100%;
+	text-align: center;
+	background-image: linear-gradient(to right, rgb(80, 220, 255) , lightseagreen);
+
+	border-radius: 14px;
+}
+
+

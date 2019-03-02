@@ -48,6 +48,8 @@
     <script type="text/javascript" src="module/project/model/validate_pro.js" ></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script type="text/javascript" src="view/assets/js/translate.js"></script>
+    		<!--validate login-->
+		<script type="text/javascript" src="module/login/model/validate_login.js" ></script>
     
       <!-- Scripts -->
     <script src="view/assets/js/jquery.min.js"></script>

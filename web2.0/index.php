@@ -1,4 +1,7 @@
 <?php
+    $path = $_SERVER['DOCUMENT_ROOT'] . '/framework/FW_PHP_OO_MVC_JQUERY/web2.0/';
+    include($path . "model/functions.php");
+    
     if ((isset($_GET['page'])) && ($_GET['page']==="controller_pro")){
 		include("view/inc/top_page_pro.php");
 	}else{
@@ -19,6 +22,21 @@
 	session_start();
     error_reporting(E_ALL);
     ini_set('display_errors', '1');
+    
+    if(isset($_SESSION['user'])){
+        if($_SESSION['type'] == "1"){
+            //print_r($_SESSION);
+            $menu = "view/inc/menu1.php"; //user
+        }elseif($_SESSION['type'] == "0"){
+            //print_r($_SESSION);
+            $menu = "view/inc/menu0.php"; //admin
+        }
+    }else{
+        $menu = "view/inc/menu.php"; //other
+    }
+
+
+    
 ?>
 <div id="wrapper">		
     <header  id="header" class="alt">    	
@@ -29,7 +47,7 @@
 	
     <nav id="menu">
     	<?php 
-		    include("view/inc/menu.php"); 
+		    include($menu); 
 		?>        
     </nav>
     <div id="">
