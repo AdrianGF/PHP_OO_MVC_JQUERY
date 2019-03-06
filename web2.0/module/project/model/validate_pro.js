@@ -60,12 +60,12 @@ function validate_project(redirect) {
 
 document.ProForm.submit();
 document.ProForm.action="index.php?page=controller_pro";
+
 }
 
 $(document).ready(function () {
     $('.Pro').click(function () {
         var id = this.getAttribute('id');
-
         $.get("module/project/controller/controller_pro.php?op=read_modal&modal=" + id, function (data, status) {
             var json = JSON.parse(data);
             //console.log(json);

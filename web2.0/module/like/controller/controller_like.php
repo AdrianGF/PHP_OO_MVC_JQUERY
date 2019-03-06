@@ -51,6 +51,7 @@
             echo json_encode($rdolike);
         }
         break;
+
        
    default:
        include("view/inc/error404.php");

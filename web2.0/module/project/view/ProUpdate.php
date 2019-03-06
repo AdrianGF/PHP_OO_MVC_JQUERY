@@ -91,6 +91,11 @@
                     <tr>
                         <td><label for="ProDateIni">Día de inicio del proyecto:</label></td>
                         <td><input name="ProDateIni" id="date2" type="ProDateIni" value="<?php echo $project['ProDateIni'];?>"/></td>
+                        <span id="e_ProDateIni" class="styerror">
+                            <?php
+                                print_r($error['ProDateIni']);
+                            ?>
+                        </span>
                     </tr>
 
                     <tr>

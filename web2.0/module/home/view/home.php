@@ -65,7 +65,7 @@
 											echo '</header>';
 											echo '<p>'. $row['ProDesc'] . '</p>';
 											echo '<footer class="algin-center">';
-												echo '<a href="#" class="button alt">Learn More</a>';
+												echo '<a id='. $row['idproject'] .'  class="donate_cart"><i class="fas fa-money-bill-wave"></i> Donate <i class="fas fa-money-bill-wave"></i></a>';
 												echo '<p>Created by:  ' . $row['Mail'] . '</p>';
 											echo '</footer>';
 											
@@ -76,6 +76,36 @@
                             }
                         }
 					?>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+        </div>
+
+        <div class="modal-body">
+          <div id="modal_products"></div>
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary addmodal" onclick="addToCart()" data-dismiss="modal">Añadir al carrito</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="provamodal"></div>
 
 					</div>
 				</div>

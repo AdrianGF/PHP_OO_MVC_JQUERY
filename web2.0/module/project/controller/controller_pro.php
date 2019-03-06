@@ -126,7 +126,7 @@
 
             case 'create':
                 include("module/project/model/validate.php");
-
+                
                 if($_POST){
                     $resultado=validate_project();
                     if ($resultado['resultado']){

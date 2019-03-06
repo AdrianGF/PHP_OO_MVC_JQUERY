@@ -178,6 +178,7 @@
         break;
 
 
+
         default:
             include("view/inc/error404.php");
         break;

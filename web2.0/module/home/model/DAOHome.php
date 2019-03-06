@@ -5,7 +5,7 @@
         
         //Home list pro
         function select_demo_projects(){
-			$sql = "SELECT ProName, ProDesc ,ProPrice, Curr, Mail FROM projects ORDER BY ProPrice DESC LIMIT 4";
+			$sql = "SELECT ProName, ProDesc ,ProPrice, Curr, Mail, idproject FROM projects ORDER BY ProPrice DESC LIMIT 4";
 			$conexion = connect::con();
             $res = mysqli_query($conexion, $sql);
             connect::close($conexion);
