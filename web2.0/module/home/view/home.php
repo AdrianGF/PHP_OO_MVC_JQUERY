@@ -53,11 +53,11 @@
 											echo '<h2>'. $row['ProName'] . '</h2>';
 
 												echo '<div class="progressPro">';
-													echo '<h1>0/'. $row['ProPrice'] . $row['Curr'] . '</h1>';
+													echo '<h1>' . $row['ProDonate'] . '/'. $row['ProPrice'] . $row['Curr'] . '</h1>';
 
 													echo '<div class="price-prog">';
 														echo '<div class="progress">';
-															echo '<div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>';
+															echo '<div class="progress-bar bg-info" role="progressbar" style="width:' . $row['Percent'] .'%" aria-valuenow='. $row['ProDonate'] .' aria-valuemin="0" aria-valuemax='. $row['ProPrice'] .'>' . $row['Percent'] .'%</div>';
 														echo '</div>';
 													echo '</div>';
 												echo '</div>';

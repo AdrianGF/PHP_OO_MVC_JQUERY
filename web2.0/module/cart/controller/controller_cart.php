@@ -38,7 +38,7 @@
             case 'project_price':
                 try{
                     $daocart = new DAOCart();
-                    $rdo = $daocart->select_price($_GET['ProName']);
+                    $rdo = $daocart->select_price($_GET['idproject']);
     
                 }catch (Exception $e){
                     $callback = 'index.php?page=503';

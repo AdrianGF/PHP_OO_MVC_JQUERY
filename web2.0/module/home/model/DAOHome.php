@@ -5,12 +5,13 @@
         
         //Home list pro
         function select_demo_projects(){
-			$sql = "SELECT ProName, ProDesc ,ProPrice, Curr, Mail, idproject FROM projects ORDER BY ProPrice DESC LIMIT 4";
+			$sql = "SELECT ROUND(((ProDonate * 100)/ProPrice),1)AS Percent, ProName, ProDesc ,ProPrice, Curr, Mail, idproject, ProDonate FROM projects ORDER BY ProPrice DESC LIMIT 4";
 			$conexion = connect::con();
             $res = mysqli_query($conexion, $sql);
             connect::close($conexion);
             return $res;
         }
+
 
         //1.Filtro type
         function select_all_type(){

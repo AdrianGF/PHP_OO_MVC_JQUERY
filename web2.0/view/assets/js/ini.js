@@ -33,6 +33,7 @@ $(document).ready(function(){
                 }
             });
         }, 1000);
+        
         setInterval(function(){ 
             $.ajax({
                 type : 'POST',

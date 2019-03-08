@@ -5,12 +5,12 @@
     - Radio Button
     - Check Box
 - Validate PHP_BD
-- Home
+- M.Home
 - 404/503
 - A.MVC
-- Delete_All, Delte
-
-- Translate"Lang".JS
+- M.Login
+- M.Contact "Maps"
+- M.Translate "Lang".JS
 - Modal
 - Datatables
 - JQWidgets

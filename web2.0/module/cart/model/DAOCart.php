@@ -5,7 +5,7 @@
         
         //select_project
         function select_project( $idproject ){
-            $sql = "SELECT ProName FROM projects WHERE idproject = '$idproject'";
+            $sql = "SELECT idproject FROM projects WHERE idproject = '$idproject'";
 			$conexion = connect::con();
             $res = mysqli_query($conexion, $sql)->fetch_object();
             connect::close($conexion);
@@ -13,8 +13,8 @@
         }
 
         //select_ProPrice
-        function select_price( $ProName ){
-            $sql = "SELECT ProPrice, ProName FROM projects WHERE ProName = '$ProName'";
+        function select_price( $idproject ){
+            $sql = "SELECT ProPrice, ProName, ProDonate, Curr, idproject FROM projects WHERE idproject = '$idproject'";
             $conexion = connect::con();
             $res = mysqli_query($conexion, $sql)->fetch_object();
             connect::close($conexion);

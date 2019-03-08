@@ -13,7 +13,6 @@
             try{
                 $daohome = new DAOHome();
                 $rdo = $daohome->select_demo_projects();
-
             }catch (Exception $e){
                 $callback = 'index.php?page=503';
                 die('<script>window.location.href="'.$callback .'";</script>');
