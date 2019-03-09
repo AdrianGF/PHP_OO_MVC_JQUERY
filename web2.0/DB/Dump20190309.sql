@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `bdproject` /*!40100 DEFAULT CHARACTER SET utf8 */;
-USE `bdproject`;
 -- MySQL dump 10.13  Distrib 5.7.17, for Win64 (x86_64)
 --
 -- Host: 127.0.0.1    Database: bdproject
@@ -62,7 +60,7 @@ CREATE TABLE `projects` (
   `ProImg` varchar(45) DEFAULT NULL,
   `ProDonate` int(45) DEFAULT '0',
   PRIMARY KEY (`idproject`)
-) ENGINE=InnoDB AUTO_INCREMENT=201 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=200 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -84,13 +82,15 @@ DROP TABLE IF EXISTS `shop`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `shop` (
   `idshop` int(11) NOT NULL AUTO_INCREMENT,
+  `idproject` int(45) DEFAULT NULL,
+  `proName` varchar(45) DEFAULT NULL,
   `user` varchar(45) DEFAULT NULL,
-  `donate` varchar(45) DEFAULT NULL,
-  `quanity` varchar(45) DEFAULT NULL,
-  `date` varchar(10) DEFAULT NULL,
+  `oldD` varchar(45) DEFAULT NULL,
+  `newD` varchar(45) DEFAULT NULL,
+  `date` varchar(20) DEFAULT NULL,
   `total` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`idshop`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -99,6 +99,7 @@ CREATE TABLE `shop` (
 
 LOCK TABLES `shop` WRITE;
 /*!40000 ALTER TABLE `shop` DISABLE KEYS */;
+INSERT INTO `shop` VALUES (15,187,'Andiamo','\"Admin01\"','80000','0','2019-03-09 18:58:25','500'),(16,197,'DDArt01','\"Admin01\"','90000','30000','2019-03-09 18:58:25','30500'),(17,187,'Andiamo','\"Admin01\"','80000','0','2019-03-09 18:59:56','500'),(18,197,'DDArt01','\"Admin01\"','90000','30000','2019-03-09 18:59:56','30500'),(19,187,'Andiamo','\"Admin01\"','0','500','2019-03-09 19:02:34','500'),(20,197,'DDArt01','\"Admin01\"','30000','500','2019-03-09 19:02:34','30500'),(21,187,'Andiamo','\"Admin01\"','0','500','2019-03-09 19:05:35','500'),(22,197,'DDArt01','\"Admin01\"','30000','500','2019-03-09 19:05:36','30500'),(23,197,'DDArt01','\"Admin01\"','30000','100','2019-03-09 19:10:00','30100');
 /*!40000 ALTER TABLE `shop` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -139,4 +140,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-03-07 18:28:29
+-- Dump completed on 2019-03-09 19:12:06

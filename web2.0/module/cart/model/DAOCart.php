@@ -20,5 +20,14 @@
             connect::close($conexion);
             return $res;
         }
+
+        //add_info
+        function add_info( $idproject, $proname , $user, $old, $new, $total ){
+            $sql = "INSERT INTO shop( idproject, proName, user, oldD, newD, `date`, total) VALUES( $idproject , '$proname' , '$user', $old, $new, now(), $total);";
+            $conexion = connect::con();
+            $res = mysqli_query($conexion, $sql);
+            connect::close($conexion);
+            return $res;
+        }
 		
 	}
