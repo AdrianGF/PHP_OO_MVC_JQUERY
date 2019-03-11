@@ -30,7 +30,10 @@ $(document).ready(function(){
     $(document).on('click','.donate_cart', function() { 
 
         alert("Añadido al carrito");
+        
         var idproject = $(this).attr("id");
+
+
         //console.log(idproject);
         $.post("module/cart/controller/controller_cart.php?&op=project_shop&idproject=" + idproject, function(data,status) {
             var json = JSON.parse(data);

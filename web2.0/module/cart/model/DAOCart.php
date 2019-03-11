@@ -24,8 +24,10 @@
         //add_info
         function add_info( $idproject, $proname , $user, $old, $new, $total ){
             $sql = "INSERT INTO shop( idproject, proName, user, oldD, newD, `date`, total) VALUES( $idproject , '$proname' , '$user', $old, $new, now(), $total);";
+            $sql2 = "UPDATE projects SET ProDonate = $total WHERE idproject = $idproject;";
             $conexion = connect::con();
             $res = mysqli_query($conexion, $sql);
+            mysqli_query($conexion, $sql2);
             connect::close($conexion);
             return $res;
         }

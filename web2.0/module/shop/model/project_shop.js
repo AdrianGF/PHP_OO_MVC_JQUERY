@@ -59,7 +59,7 @@ $(document).ready(function(){
                         ElementDiv.id = "list_shop";
                         ElementDiv.innerHTML =  "<div class='shop_img_class'> <img  src='view/images/bg.jpg' class='shop_img'></div>"
                                                 + "<a class='shop_proname_class' id="+ list.idproject +">" + list.ProName + "</a>"
-                                                + " <br> <a href='#' id='buy' class='button alt'><i class='fas fa-money-bill-wave'></i> Donate <i class='fas fa-money-bill-wave'></i></a>";
+                                                + " <br> <a id=" + list.idproject +"  class='donate_cart'><i class='fas fa-money-bill-wave'></i> Donate <i class='fas fa-money-bill-wave'></i></a>";
                         document.getElementById("list_products").appendChild(ElementDiv);
                     });
                 });
@@ -80,7 +80,7 @@ $(document).ready(function(){
                         ElementDiv.id = "list_shop";
                         ElementDiv.innerHTML =  "<div class='shop_img_class'> <img  src='view/images/bg.jpg' class='shop_img'></div>"
                                                 + "<a class='shop_proname_class' id="+ list.idproject +">" + list.ProName + "</a>"
-                                                + " <br> <a href='#' id='buy' class='button alt'><i class='fas fa-money-bill-wave'></i> Donate <i class='fas fa-money-bill-wave'></i></a>";
+                                                + " <br> <a id=" + list.idproject +"  class='donate_cart'><i class='fas fa-money-bill-wave'></i> Donate <i class='fas fa-money-bill-wave'></i></a>";
                         document.getElementById("list_products").appendChild(ElementDiv);
                   });
                 });
@@ -99,7 +99,7 @@ $(document).ready(function(){
                         ElementDiv.id = "list_shop";
                         ElementDiv.innerHTML =  "<div class='shop_img_class'> <img  src='view/images/bg.jpg' class='shop_img'></div>"
                                                 + "<a class='shop_proname_class' id="+ list.idproject +">" + list.ProName + "</a>"
-                                                + " <br> <a href='#' id='buy' class='button alt'><i class='fas fa-money-bill-wave'></i> Donate <i class='fas fa-money-bill-wave'></i></a>";
+                                                + " <br> <a id=" + list.idproject +"  class='donate_cart'><i class='fas fa-money-bill-wave'></i> Donate <i class='fas fa-money-bill-wave'></i></a>";
                         document.getElementById("list_products").appendChild(ElementDiv);
                   });
                 });
@@ -119,7 +119,7 @@ $(document).ready(function(){
                         ElementDiv.id = "list_shop";
                         ElementDiv.innerHTML =  "<div class='shop_img_class'> <img  src='view/images/bg.jpg' class='shop_img'></div>"
                                                 + "<a class='shop_proname_class' id="+ list.idproject +">" + list.ProName + "</a>"
-                                                + " <br> <a href='#' id='buy' class='button alt'><i class='fas fa-money-bill-wave'></i> Donate <i class='fas fa-money-bill-wave'></i></a>";
+                                                + " <br> <a id=" + list.idproject +"  class='donate_cart'><i class='fas fa-money-bill-wave'></i> Donate <i class='fas fa-money-bill-wave'></i></a>";
                         document.getElementById("list_products").appendChild(ElementDiv);
                   });
                 });
@@ -140,7 +140,7 @@ $(document).ready(function(){
                     ElementDiv.innerHTML =  "<div class='details' >"
                                             + "<p>" + list.ProName + "</p>"
                                             + "<p>" + list.ProDesc + "</p>"
-                                            + "<p> <br> <a href='#' id='buy' class='button alt'><i class='fas fa-money-bill-wave'></i> Donate <i class='fas fa-money-bill-wave'></i></a> </p>"
+                                            + "<p> <br> <a id=" + list.idproject +"  class='donate_cart'><i class='fas fa-money-bill-wave'></i> Donate <i class='fas fa-money-bill-wave'></i></a> </p>"
                                             + "</div>";
                     document.getElementById("details_prod").appendChild(ElementDiv);
                 });
