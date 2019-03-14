@@ -16,7 +16,6 @@
 - JQWidgets
 - API KEY fundsurfer
 
-
     Others Technologies:
 - Data Table.net
 - JQWidgets.com
