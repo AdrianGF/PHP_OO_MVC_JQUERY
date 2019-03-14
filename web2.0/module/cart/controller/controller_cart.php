@@ -55,6 +55,54 @@
     
             break;
 
+            //Calc_dupli
+            case 'calc_dupli':
+                try{
+                    $daocart = new DAOCart();
+                    $rdo = $daocart->dupli($_GET['idproject']);
+    
+                }catch (Exception $e){
+                    $callback = 'index.php?page=503';
+                    die('<script>window.location.href="'.$callback .'";</script>');
+                }
+                
+                if(!$rdo){
+                    $callback = 'index.php?page=503';
+                    die('<script>window.location.href="'.$callback .'";</script>');
+                }else{
+                    echo json_encode($rdo);
+                }
+    
+            break;
+
+            //Group_by
+            case 'group_by':
+                try{
+                    $daocart = new DAOCart();
+                    $rdo = $daocart->group_by();
+                    if($rdo){
+                        $daocart = new DAOCart();
+                        $rdo2 = $daocart->delete();
+                    }
+                    
+    
+                }catch (Exception $e){
+                    $callback = 'index.php?page=503';
+                    die('<script>window.location.href="'.$callback .'";</script>');
+                }
+                
+                if(!$rdo){
+                    echo json_encode("error");
+                }else{
+                    $res = array();
+                    foreach ($rdo as $row){
+                        array_push($res, $row);
+                    }
+                    echo json_encode($res);
+                }
+    
+            break;
+
             //User_info
             case 'user_info':
                 $user = $_SESSION['user'];
@@ -94,8 +142,7 @@
                 }
                 
                 if(!$rdo){
-                    $callback = 'index.php?page=503';
-                    die('<script>window.location.href="'.$callback .'";</script>');
+                    echo json_encode("error");
                 }else{
                     echo json_encode($rdo);
                 }

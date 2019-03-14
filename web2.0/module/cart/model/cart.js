@@ -1,4 +1,8 @@
 var cart = [];
+var auxarr = [];
+var obj = "";
+var aux = "";
+var prome = "";
 $(document).ready(function(){
     
     $(function () {
@@ -10,9 +14,7 @@ $(document).ready(function(){
 
     $(document).on('change','.cant', function() {  
         var testy = JSON.parse(localStorage.cart); 
-        
         //console.log("");
-        
         for (var i in cart) {
             if(cart[i].IdPro ===  $(this).attr("id")){
                 var cant = $(this).val();
@@ -29,14 +31,16 @@ $(document).ready(function(){
 
     $(document).on('click','.donate_cart', function() { 
 
+        var idproject = $(this).attr("id");
+        
         alert("Añadido al carrito");
         
-        var idproject = $(this).attr("id");
-
+  
 
         //console.log(idproject);
         $.post("module/cart/controller/controller_cart.php?&op=project_shop&idproject=" + idproject, function(data,status) {
             var json = JSON.parse(data);
+           
 
             //console.log(json.ProName);
             for (var i in cart) {
@@ -122,13 +126,20 @@ function InsertCompra() {
                 $.post("module/cart/controller/controller_cart.php?&op=add_info&info=" + finaldata, function(data,status) {
                   
                   console.log(data);
-                  alert("Compra realizada correctamente");
-                  DelCart();
-                  $( "#butttram" ).hide();
-                  $( "#cart" ).hide();
-                  $("#confpurch").show();
-                  $("#confpurch").append("Compra realizada correctamente");
-                  setTimeout('window.location.replace("index.php?page=controller_home&op=home");',2000);
+                  if( data === '"error"'){
+                        DelCart();
+                        alert("La donacion no es valida");
+                        setTimeout('window.location.replace("index.php?page=controller_home&op=home");',2000);
+                  }else{
+                        alert("Compra realizada correctamente");
+                        DelCart();
+                        $( "#butttram" ).hide();
+                        $( "#cart" ).hide();
+                        $("#confpurch").show();
+                        $("#confpurch").append("Compra realizada correctamente");
+                        setTimeout('window.location.replace("index.php?page=controller_home&op=home");',2000);
+                  }
+
                 });  
               }, 1000);
 
@@ -136,6 +147,74 @@ function InsertCompra() {
     });
   }
 }
+
+/*
+            for (var j in cart){
+                if((cart[i].IdPro == cart[j].IdPro) && ( i != j)){
+                    //console.log(cart[i].IdPro);
+                    //console.log(cart[j].IdPro);
+                    cart[j].IdPro = cart[j].IdPro + "R" + j;
+                    console.log(cart[j].IdPro);
+                    var atri = $(this).attr("id") + "R" + j;
+                    console.log (atri);
+                    if(cart[j].IdPro ===  atri){
+                        var cant = $(this).val();
+                        cart[i].Cant = cant;
+                        //console.log(cant);
+                        showCart();
+                        saveCart();
+                        return; 
+                    }
+                    
+                }
+            }
+ */
+
+
+
+function TestMio(data, i) {
+    const promise = new Promise(function (resolve, reject) {
+        //console.log(i);
+        
+        $.get("module/cart/controller/controller_cart.php?&op=calc_dupli&idproject=" + data[i].IdPro , function(data1,status) {
+            var resu = [];
+            //console.log(i);
+            //console.log(data1)
+            if(data1 === 'true'){
+                //console.log(data[i]);
+                resu = data[i];
+                resu.i = i;
+                resolve(resu);
+            }else{
+                reject(new Error('Error'));
+            }
+        });
+
+    });
+    return promise;
+}
+
+function TestMio2() {
+    const promise = new Promise(function (resolve, reject) {
+        //console.log(data[i].IdPro);
+        $.get("module/cart/controller/controller_cart.php?&op=group_by", function(data1,status) {
+            if (data1 === "'error'"){
+                DelCart();
+                alert("ERROR");
+                reject(new Error('Error'));
+            }else{
+                //console.log(data1);
+                var json = JSON.parse(data1);
+                //json = data1;
+                resolve(json);
+            }
+        });
+
+    });
+    return promise;
+}
+
+
 
 
 
@@ -151,11 +230,60 @@ function showCart() {
     var total = 0;
     for (var i in cart) {
         var item = cart[i];
+        //console.log(i);
+        
+        TestMio(cart, i).then(function (response1){
+            var x = JSON.parse(JSON.stringify(response1));
+        
+            //console.log(x.i);
+            //console.log(x.data.length-1);
+            if(parseInt(x.i) === x.IdPro.length-1){
+                //console.log("in");
+                TestMio2().then(function (response2){
+                    
+                    var y = JSON.parse(JSON.stringify(response2));
+                    //.log(x.i);
+                    for(var j = 0; j <= x.i; j++){
+                        //console.log(y[j].count);
+                        if(y[j].count > 1){
+                            //console.log(y[j]);
+                            for( var z = 0; z < y[j].count; z++ ){
+                                aux = y[j].idproject;
+                                aux = y[j].idproject + 'R' +  parseInt(z);
+                                
+                                auxarr.push(aux);
+                                //console.log(auxarr);
+                                
+                                //console.log(obj);
+                                
+
+
+                                
+                            }
+                        }else{
+                            aux = y[j].idproject;
+                            auxarr.push(aux);
+                            //console.log(aux);
+                        }
+                        
+                    }
+                    
+                    
+                });
+            }
+        });
+
+
         
         CalcPrice(item.IdPro, item.Cant, i).then(function (response) {
             var DataPre = JSON.parse(JSON.stringify(response));
-                    total = parseInt(total) + parseInt(DataPre.cant) ;
-                    //console.log(total);
+            total = parseInt(total) + parseInt(DataPre.cant) ;
+            var x = DataPre.cont;     
+            
+           
+            //console.log();
+
+
 
 
             var row = "<tr><td>" + DataPre.ProName + "</td><td>"
@@ -170,8 +298,11 @@ function showCart() {
             $("#cartFoot").append("Total a pagar: " + total + "€");
         });
     }
+    
+
 
 }
+
 
 function DelCart(){
     localStorage.removeItem('cart');
