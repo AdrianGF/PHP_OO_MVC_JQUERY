@@ -1,4 +1,4 @@
-# FW_PHP_OO_MVC_JQUERY
+# PHP_OO_MVC_JQUERY
 
 - CRUD
 - Validate.JS
